@@ -1,0 +1,24 @@
+38HX BROWSER — COMO GERAR O APK PELO CELULAR
+
+IMPORTANTE: este projeto é um protótipo. A integração atual da Proton VPN abre o app oficial; não é uma VPN embutida no navegador.
+
+1) Baixe o ZIP e extraia-o no celular.
+2) Abra https://github.com e entre/crie uma conta.
+3) Toque no + e escolha New repository. Nome: 38hx-browser. Marque Public e crie.
+4) No repositório, toque Add file > Upload files.
+5) Envie TODO O CONTEÚDO da pasta 38hx-browser-android extraída (incluindo a pasta oculta .github, se o gerenciador mostrar). Não envie só o ZIP. Se o site móvel não permitir enviar pastas ou arquivos ocultos, use a opção de navegador “Versão para computador” ou o upload pelo GitHub web.
+6) Toque Commit changes.
+7) Abra a aba Actions do repositório. Se aparecer “I understand my workflows, go ahead and enable them”, confirme.
+8) Escolha “Build 38HX Browser APK”. Toque Run workflow > Run workflow.
+9) Espere o trabalho ficar verde (Success). Abra a execução concluída e procure Artifacts.
+10) Baixe “38HX-Browser-APK”. O download é outro ZIP; extraia-o para encontrar app-debug.apk.
+11) Toque em app-debug.apk para instalar. Se o Android bloquear, permita instalar apps desta fonte somente se você confia no arquivo que acabou de gerar.
+
+SE FALHAR:
+- Abra a execução vermelha, toque no trabalho “build” e leia a primeira linha marcada como erro.
+- O APK só estará disponível se a compilação terminar com Success.
+- Não compartilhe tokens, senhas nem chaves privadas.
+
+O QUE ESTE PROJETO NÃO FAZ:
+- Não é um APK já compilado.
+- Não incorpora o túnel Proton VPN dentro do navegador. O botão encaminha para o aplicativo Proton VPN oficial. Para VPN embutida seria necessária uma integração Android mais profunda e compatível com os componentes oficiais da Proton.
